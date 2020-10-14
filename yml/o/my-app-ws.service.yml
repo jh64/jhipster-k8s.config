@@ -1,0 +1,50 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-10-12T11:28:14Z"
+  labels:
+    app: my-app-ws
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:app: {}
+      f:spec:
+        f:externalTrafficPolicy: {}
+        f:ports:
+          .: {}
+          k:{"port":8080,"protocol":"TCP"}:
+            .: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+        f:selector:
+          .: {}
+          f:app: {}
+        f:sessionAffinity: {}
+        f:type: {}
+    manager: kubectl
+    operation: Update
+    time: "2020-10-12T11:28:14Z"
+  name: my-app-ws
+  namespace: default
+  resourceVersion: "447768"
+  selfLink: /api/v1/namespaces/default/services/my-app-ws
+  uid: 4dcae040-509f-47b1-a1fc-4b75e70a0bde
+spec:
+  clusterIP: 10.110.136.207
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 30825
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: my-app-ws
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer: {}

@@ -1,0 +1,50 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-10-10T04:28:47Z"
+  labels:
+    app: kubernetes-bootcamp
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:app: {}
+      f:spec:
+        f:externalTrafficPolicy: {}
+        f:ports:
+          .: {}
+          k:{"port":8080,"protocol":"TCP"}:
+            .: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+        f:selector:
+          .: {}
+          f:app: {}
+        f:sessionAffinity: {}
+        f:type: {}
+    manager: kubectl
+    operation: Update
+    time: "2020-10-10T04:28:47Z"
+  name: kubernetes-bootcamp
+  namespace: default
+  resourceVersion: "36231"
+  selfLink: /api/v1/namespaces/default/services/kubernetes-bootcamp
+  uid: 90083cfa-e004-421b-a9a8-5b04907dc982
+spec:
+  clusterIP: 10.104.200.15
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 32224
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: kubernetes-bootcamp
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}
