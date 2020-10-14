@@ -28,7 +28,7 @@ kubectl get po -o wide
 
 -
 kubectl apply  -f ./my-app-ws.deployment.yml
-kubectl apply  -f ./kubernetes-bootcamp.yml
+kubectl apply  -f ./kubernetes-bootcamp.deployment.yml
 It will take some minutes for the pods to be created - to become "Running" status.
 
 +++
