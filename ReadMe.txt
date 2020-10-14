@@ -8,5 +8,15 @@ kubectl get services
 kubectl get service kubernetes-bootcamp -o yaml>kubernetes-bootcamp.service.yml
 kubectl get service my-app-ws           -o yaml>my-app-ws.service.yml
 
+---
+kubectl get deployment kubernetes-bootcamp -o yaml>kubernetes-bootcamp.deployment.yml
+kubectl get deployment my-app-ws           -o yaml>my-app-ws.deployment.yml
+
 +++
-kubectl apply -f ./my-app-ws.load-balancer.yaml
+both are working:
+
+kubectl apply  -f ./my-app-ws.load-balancer.yaml
+kubectl create -f ./my-app-ws.load-balancer.yaml
+
++++
+
