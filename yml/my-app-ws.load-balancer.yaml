@@ -15,6 +15,6 @@ spec:
   selector:
     app: my-app-ws
   sessionAffinity: None
-  type: NodePort
+  type: LoadBalancer
 status:
   loadBalancer: {}
