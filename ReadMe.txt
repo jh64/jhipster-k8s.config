@@ -18,5 +18,16 @@ below both are working ok, but make sure delete the service before running:
 kubectl apply  -f ./my-app-ws.load-balancer.yaml
 kubectl create -f ./my-app-ws.load-balancer.yaml
 
+---
+after delete the deployment, the cluster will take some minutes to terminate the pods.
+kubectl delete deployment my-app-ws
+
+-
+kubectl get po -o wide
+
+-
+kubectl apply  -f ./my-app-ws.deployment.yml
+It will take some minutes for the pods to be created - to become "Running" status.
+
 +++
 
