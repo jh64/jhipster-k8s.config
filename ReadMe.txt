@@ -18,6 +18,8 @@ below both are working ok, but make sure delete the service before running:
 kubectl apply  -f ./my-app-ws.load-balancer.yaml
 kubectl create -f ./my-app-ws.load-balancer.yaml
 
+kubectl apply  -f ./kubernetes-bootcamp.load-balancer.yaml
+
 ---
 after delete the deployment, the cluster will take some minutes to terminate the pods.
 kubectl delete deployment my-app-ws
@@ -32,4 +34,6 @@ kubectl apply  -f ./kubernetes-bootcamp.deployment.yml
 It will take some minutes for the pods to be created - to become "Running" status.
 
 +++
+curl localhost:32224
+curl localhost:30825
 
