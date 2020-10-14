@@ -13,7 +13,7 @@ kubectl get deployment kubernetes-bootcamp -o yaml>kubernetes-bootcamp.deploymen
 kubectl get deployment my-app-ws           -o yaml>my-app-ws.deployment.yml
 
 +++
-both are working:
+below both are working ok, but make sure delete the service before running:
 
 kubectl apply  -f ./my-app-ws.load-balancer.yaml
 kubectl create -f ./my-app-ws.load-balancer.yaml
