@@ -37,3 +37,10 @@ It will take some minutes for the pods to be created - to become "Running" statu
 curl localhost:32224
 curl localhost:30825
 
++++
+kubectl create deployment postgres --image=postgres:12.3
+kubectl expose deployment postgres --type=NodePort                      --port=8080
+
++++
+kubectl apply  -f ./postgres.deployment.yml
+kubectl apply  -f ./postgres.service.yml
