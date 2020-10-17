@@ -44,3 +44,9 @@ kubectl expose deployment postgres --type=NodePort                      --port=8
 +++
 kubectl apply  -f ./postgres.deployment.yml
 kubectl apply  -f ./postgres.service.yml
+
+
++++
+sudo apt-get install postgresql-client
+psql -h 192.168.2.40 -U postgresadmin --password -p 30432 postgresdb
+

@@ -2,14 +2,14 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: myappws-postgresql
-  name: myappws-postgresql
+    app: postgres
+  name: postgres
   namespace: default
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: myappws-postgresql
+      app: postgres
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -18,12 +18,12 @@ spec:
   template:
     metadata:
       labels:
-        app: myappws-postgresql
+        app: postgres
     spec:
       containers:
-      - image: myappws-postgresql:12.3
+      - image: postgres:12.3
         imagePullPolicy: IfNotPresent
-        name: myappws-postgresql
+        name: postgres
         resources: {}
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
