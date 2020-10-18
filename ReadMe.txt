@@ -50,3 +50,31 @@ kubectl apply  -f ./postgres.service.yml
 sudo apt-get install postgresql-client
 psql -h 192.168.2.40 -U postgresadmin --password -p 30432 postgresdb
 
++++
+kubectl rollout restart deployment my-app-ws-prod
+
++++
+kubectl exec --stdin --tty my-app-ws-7bdf8df969-l8h6f -- /bin/bash
+
++++
+How to leave the cluster:
+
+stackoverflow.com/questions/35757620/how-to-gracefully-remove-a-node-from-kubernetes
+
+On Master Node
+
+1. Find the node
+   kubectl get nodes
+
+2. Drain it
+   kubectl drain nodetoberemoved
+   
+3. Delete it
+   kubectl delete node nodetoberemoved
+   
+On Worker Node (nodetoberemoved). Remove join/init setting from node
+
+1. kubeadm reset
+
++++
+

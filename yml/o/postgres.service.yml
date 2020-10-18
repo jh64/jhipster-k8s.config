@@ -1,0 +1,57 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-10-18T04:15:09Z"
+  labels:
+    app: postgres-container
+    tier: backend
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:app: {}
+          f:tier: {}
+      f:spec:
+        f:ports:
+          .: {}
+          k:{"port":5432,"protocol":"TCP"}:
+            .: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+        f:selector:
+          .: {}
+          f:app: {}
+        f:sessionAffinity: {}
+        f:sessionAffinityConfig:
+          .: {}
+          f:clientIP:
+            .: {}
+            f:timeoutSeconds: {}
+        f:type: {}
+    manager: kubectl-create
+    operation: Update
+    time: "2020-10-18T04:15:09Z"
+  name: postgres
+  namespace: default
+  resourceVersion: "1515985"
+  selfLink: /api/v1/namespaces/default/services/postgres
+  uid: 9f25c9e5-c706-47c2-b6ce-9ef3461fd259
+spec:
+  clusterIP: 10.100.252.181
+  ports:
+  - port: 5432
+    protocol: TCP
+    targetPort: 5432
+  selector:
+    app: postgres
+  sessionAffinity: ClientIP
+  sessionAffinityConfig:
+    clientIP:
+      timeoutSeconds: 10800
+  type: ClusterIP
+status:
+  loadBalancer: {}
