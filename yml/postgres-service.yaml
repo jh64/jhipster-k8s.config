@@ -13,4 +13,5 @@ spec:
     targetPort: 5432
   selector:
     app: postgres
-  sessionAffinity: ClientIP
+  externalIPs:
+    - 192.168.218.65
