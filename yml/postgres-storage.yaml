@@ -6,14 +6,13 @@ metadata:
     type: local
     app: postgres
 spec:
-  storageClassName: nfs
+  storageClassName: manual
   capacity:
     storage: 5Gi
   accessModes:
     - ReadWriteMany
-  nfs:
-    path: /mnt/postgresdata
-    server: 192.168.2.40
+  hostPath:
+    path: "/mnt/data"
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -22,7 +21,7 @@ metadata:
   labels:
     app: postgres
 spec:
-  storageClassName: nfs
+  storageClassName: manual
   accessModes:
     - ReadWriteMany
   resources:
