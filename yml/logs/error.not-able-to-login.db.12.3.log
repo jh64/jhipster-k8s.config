@@ -1,0 +1,276 @@
+jd@u20041-kmaster:~/Desktop/code/github/config.k8s/yml$ kubectl logs postgres-7b784bc74-q4x6q
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2020-10-21 03:55:30.305 UTC [1] LOG:  starting PostgreSQL 12.3 (Debian 12.3-1.pgdg100+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 8.3.0-6) 8.3.0, 64-bit
+2020-10-21 03:55:30.305 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2020-10-21 03:55:30.335 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2020-10-21 03:55:30.466 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2020-10-21 03:55:31.491 UTC [24] LOG:  database system was interrupted; last known up at 2020-10-21 03:51:17 UTC
+2020-10-21 03:56:05.879 UTC [24] LOG:  database system was not properly shut down; automatic recovery in progress
+2020-10-21 03:56:05.919 UTC [24] LOG:  redo starts at 0/16B7CC8
+2020-10-21 03:56:05.931 UTC [24] LOG:  invalid record length at 0/16C7958: wanted 24, got 0
+2020-10-21 03:56:05.931 UTC [24] LOG:  redo done at 0/16C7930
+2020-10-21 03:56:06.214 UTC [1] LOG:  database system is ready to accept connections
+2020-10-21 04:11:07.358 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CB870
+2020-10-21 04:11:07.358 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:07.361 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CB870
+2020-10-21 04:11:07.361 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:08.609 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CB870
+2020-10-21 04:11:08.609 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:08.610 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CB870
+2020-10-21 04:11:08.610 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:08.610 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:08.610 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:09.613 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CB870
+2020-10-21 04:11:09.613 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:09.615 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CB870
+2020-10-21 04:11:09.615 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:09.615 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:09.615 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:10.619 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CB870
+2020-10-21 04:11:10.619 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:10.619 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CB870
+2020-10-21 04:11:10.619 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:10.619 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:10.619 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:11.623 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CB870
+2020-10-21 04:11:11.623 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:11.624 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CB870
+2020-10-21 04:11:11.624 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:11.624 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:11.624 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:12.628 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CB870
+2020-10-21 04:11:12.628 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:12.629 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CB870
+2020-10-21 04:11:12.629 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:12.629 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:12.629 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:13.635 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CB870
+2020-10-21 04:11:13.635 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:13.636 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CB870
+2020-10-21 04:11:13.636 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:13.636 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:13.636 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:14.639 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CB870
+2020-10-21 04:11:14.639 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:14.640 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CB870
+2020-10-21 04:11:14.640 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:14.640 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:14.640 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:15.645 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CB870
+2020-10-21 04:11:15.645 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:15.645 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CB870
+2020-10-21 04:11:15.645 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:15.645 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:15.645 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:16.662 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CB870
+2020-10-21 04:11:16.662 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:16.662 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CB870
+2020-10-21 04:11:16.662 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:16.662 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:16.662 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:17.665 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CB870
+2020-10-21 04:11:17.665 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:17.665 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CB870
+2020-10-21 04:11:17.665 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:17.665 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:17.665 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:18.671 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CB870
+2020-10-21 04:11:18.671 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:18.672 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CB870
+2020-10-21 04:11:18.672 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:18.672 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:18.672 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:19.674 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CB870
+2020-10-21 04:11:19.674 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:19.675 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CB870
+2020-10-21 04:11:19.675 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:19.675 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:19.675 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:20.677 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CB870
+2020-10-21 04:11:20.677 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:20.677 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CB870
+2020-10-21 04:11:20.677 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:20.677 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:20.677 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:21.681 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CB870
+2020-10-21 04:11:21.681 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:21.682 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CB870
+2020-10-21 04:11:21.682 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:21.682 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:21.682 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:22.687 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CB870
+2020-10-21 04:11:22.687 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:22.687 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CB870
+2020-10-21 04:11:22.687 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:22.687 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:22.687 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:23.698 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CB870
+2020-10-21 04:11:23.698 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:23.699 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CB870
+2020-10-21 04:11:23.699 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:23.699 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:23.699 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:24.709 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:24.709 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:24.709 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:24.709 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:24.710 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:24.710 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:25.712 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:25.712 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:25.712 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:25.712 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:25.712 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:25.712 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:26.715 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:26.715 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:26.716 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:26.716 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:26.716 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:26.716 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:27.719 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:27.719 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:27.719 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:27.719 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:27.719 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:27.719 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:28.722 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:28.722 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:28.722 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:28.722 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:28.722 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:28.722 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:29.724 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:29.724 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:29.724 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:29.724 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:29.724 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:29.724 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:30.726 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:30.726 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:30.726 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:30.726 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:30.726 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:30.726 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:31.728 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:31.728 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:31.728 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:31.728 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:31.728 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:31.728 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:32.746 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:32.746 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:32.746 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:32.746 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:32.746 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:32.746 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:33.747 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:33.747 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:33.747 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:33.747 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:33.747 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:33.747 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:34.750 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:34.750 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:34.750 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:34.750 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:34.750 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:34.750 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:35.753 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:35.753 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:35.753 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:35.753 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:35.753 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:35.753 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:36.757 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:36.757 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:36.757 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:36.757 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:36.757 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:36.757 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:37.760 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:37.760 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:37.760 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:37.760 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:37.760 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:37.760 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:38.845 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:38.845 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:38.845 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:38.845 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:38.846 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:38.846 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:39.848 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:39.848 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:39.848 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:39.848 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:39.848 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:39.848 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:40.851 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:40.851 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:40.851 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:40.851 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:40.851 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:40.851 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:41.853 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:41.853 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:41.853 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:41.853 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:41.853 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:41.853 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:42.855 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:42.855 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:42.855 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:42.855 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:42.855 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:42.855 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:43.858 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:43.858 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:43.858 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:43.858 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:43.858 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:43.858 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:44.860 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16CED48
+2020-10-21 04:11:44.860 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:44.860 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16CED48
+2020-10-21 04:11:44.860 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:44.860 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:44.860 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:45.865 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16D2270
+2020-10-21 04:11:45.865 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:45.865 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16D2270
+2020-10-21 04:11:45.865 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:45.865 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:45.865 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:46.868 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16D2270
+2020-10-21 04:11:46.868 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:46.868 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16D2270
+2020-10-21 04:11:46.868 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:46.868 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:46.868 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:47.870 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16D2270
+2020-10-21 04:11:47.870 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:47.871 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16D2270
+2020-10-21 04:11:47.871 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:47.871 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:47.871 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:48.878 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16D6AE8
+2020-10-21 04:11:48.878 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:48.878 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16D6AE8
+2020-10-21 04:11:48.878 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:48.878 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:48.878 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:49.882 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16D7E80
+2020-10-21 04:11:49.882 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:49.882 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16D7E80
+2020-10-21 04:11:49.882 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:49.882 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:49.882 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
+2020-10-21 04:11:50.884 UTC [25] LOG:  request to flush past end of generated WAL; request 0/16DAE50, currpos 0/16D7E80
+2020-10-21 04:11:50.884 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:50.884 UTC [25] ERROR:  xlog flush request 0/16DAE50 is not satisfied --- flushed only to 0/16D7E80
+2020-10-21 04:11:50.884 UTC [25] CONTEXT:  writing block 0 of relation base/16384/16396
+2020-10-21 04:11:50.884 UTC [25] WARNING:  could not write block 0 of base/16384/16396
+2020-10-21 04:11:50.884 UTC [25] DETAIL:  Multiple failures --- write error might be permanent.
