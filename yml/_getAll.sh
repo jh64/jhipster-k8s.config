@@ -1,5 +1,5 @@
 set -v
-clear
+#clear
 
 #++++++++++
 kubectl get pvc
