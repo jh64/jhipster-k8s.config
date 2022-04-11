@@ -3,7 +3,7 @@ clear
 
 #kubectl create -f sss-ws.deployment.prod.yml
 #kubectl create -f sss.load-balancer.prod.yaml
- kubectl create -f sss-ws.deployment.yml
+ kubectl create -f sss.deployment.yml
  kubectl create -f sss.load-balancer.yaml
 
 #e.g. started MyAppWsApp in 30.242 seconds (JVM running for 31.662)
