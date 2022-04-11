@@ -2,14 +2,14 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: my-app-ws
-  name: my-app-ws
+    app: sss
+  name: sss
   namespace: default
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: my-app-ws
+      app: sss
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -18,12 +18,12 @@ spec:
   template:
     metadata:
       labels:
-        app: my-app-ws
+        app: sss
     spec:
       containers:
-      - image: u20041-kworker3-dev:5000/my-app-ws:0.0.1-SNAPSHOT
+      - image: u20041-kworker3-dev:5000/sss:0.0.1-SNAPSHOT
         imagePullPolicy: IfNotPresent
-        name: my-app-ws
+        name: sss
         resources: {}
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
