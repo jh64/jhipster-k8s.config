@@ -2,6 +2,8 @@ set -v
 #clear
 
 #++++++++++
+sudo kubectl get cs
+
 kubectl get pvc
 kubectl get pv
 
