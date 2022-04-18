@@ -28,3 +28,6 @@ sudo service kubelet restart
 
 kubectl get cs
 kubectl get nodes
+
+#++++++++++
+sudo kubeadm token create --print-join-command
