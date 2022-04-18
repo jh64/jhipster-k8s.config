@@ -2,7 +2,9 @@ set -v
 #clear
 
 #++++++++++
-sudo kubectl get cs
+#sudo kubectl get cs
+      kubectl get cs
+      kubectl get nodes
 
 kubectl get pvc
 kubectl get pv
